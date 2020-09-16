@@ -5,8 +5,8 @@ function findValues(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
-            max = arr[i] > max ? max : max
-            min = arr[i] < min ? min : min
+            max = arr[i] > max ? arr[i] : max
+            min = arr[i] < min ? arr[i] : min
             sum = sum + arr[i]
         }
     }
